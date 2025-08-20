@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zombie-Spiel</title>
+  <link rel="stylesheet" href="./src/ui/overlay.css" />
+  <style>
+    /* optional, damit Canvas & HUD sichtbar sind */
+    html, body { margin: 0; height: 100%; }
+    #game { display: block; width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="hud">
+    <div id="hudLevel"></div>
+    <div id="hudPhase"></div>
+    <div id="hudHealth"></div>
+    <div id="hudWeapon"></div>
+    <div id="hudKills"></div>
+  </div>
+
+  <canvas id="game"></canvas>
+
+  <div id="stick"><div id="nub"></div></div>
+
+  <script src="./src/game.js" defer></script>
+</body>
+</html>

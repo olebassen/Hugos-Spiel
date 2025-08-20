@@ -1,57 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Zombie-Spiel</title>
-<style>
-body {
-  margin:0;
-  background:black;
-  color:white;
-  font-family:sans-serif;
-}
-#hud {
-  position:absolute;
-  top:10px;
-  left:10px;
-  font-size:3em;
-}
-canvas {
-  display:block;
-  background:#222;
-}
-#stick {
-  position:absolute;
-  bottom:100px;
-  right:100px;
-  width:300px;
-  height:300px;
-  background:rgba(255,255,255,0.1);
-  border-radius:50%;
-  touch-action:none;
-}
-#nub {
-  position:absolute;
-  width:120px;
-  height:120px;
-  left:30px;
-  top:30px;
-  background:rgba(255,255,255,0.4);
-  border-radius:50%;
-}
-</style>
-</head>
-<body>
-<div id="hud">
-  <div id="hudLevel"></div>
-  <div id="hudPhase"></div>
-  <div id="hudHealth"></div>
-  <div id="hudWeapon"></div>
-  <div id="hudKills"></div>
-</div>
-<canvas id="game"></canvas>
-<div id="stick"><div id="nub"></div></div>
-<script>
 // ===== Canvas Setup =====
 const cvs = document.getElementById("game");
 const ctx = cvs.getContext("2d");
@@ -437,8 +383,3 @@ for(let i=0; i<5; i++){
   spawnZombie();
 }
 gameLoop(lastTime);
-
-</script>
-</body>
-</html>y>
-</html></html>

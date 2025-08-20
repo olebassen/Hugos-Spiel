@@ -1,0 +1,36 @@
+:root { --ui-scale: 1; }
+body {
+  margin:0;
+  background:black;
+  color:white;
+  font-family:sans-serif;
+}
+#hud {
+  position:absolute;
+  top:10px;
+  left:10px;
+  font-size:3em;
+}
+canvas {
+  display:block;
+  background:#222;
+}
+#stick {
+  position:absolute;
+  bottom:100px;
+  right:100px;
+  width:300px;
+  height:300px;
+  background:rgba(255,255,255,0.1);
+  border-radius:50%;
+  touch-action:none;
+}
+#nub {
+  position:absolute;
+  width:120px;
+  height:120px;
+  left:30px;
+  top:30px;
+  background:rgba(255,255,255,0.4);
+  border-radius:50%;
+}
