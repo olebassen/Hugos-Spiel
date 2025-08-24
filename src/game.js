@@ -78,7 +78,7 @@ function makeSprite(color){
   let ct = c.getContext("2d");
   ct.fillStyle = color;
   ct.beginPath();
-  ct.arc(16, 16, 14, 0, Math.PI*2);
+  ct.arc(4, 4, 3.5, 0, Math.PI*2);
   ct.fill();
   return c;
 }
