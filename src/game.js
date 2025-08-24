@@ -74,7 +74,7 @@ const state = {
 // ===== Sprite-Erstellung =====
 function makeSprite(color){
   let c = document.createElement("canvas");
-  c.width = 32; c.height = 32;
+  c.width = 8; c.height = 8;
   let ct = c.getContext("2d");
   ct.fillStyle = color;
   ct.beginPath();
